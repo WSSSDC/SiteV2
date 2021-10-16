@@ -1,23 +1,39 @@
 import logo from './logo.svg';
 import './App.css';
+import Nav from './Nav';
+import Home from './Home';
+import About from './About';
+import Team from './Team';
+import Join from './Join';
+import Footer from './Footer';
 
 function App() {
+  const tabs = [
+    {
+      title: "WORKSHOPS",
+    },
+    {
+      title: "ABOUT",
+    },
+    {
+      title: "TEAM",
+    },
+    {
+      title: "HACKATHONS",
+    },
+    {
+      title: "JOIN",
+    }
+  ]
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav tabs={tabs}></Nav>
+      <Home></Home>
+      <About></About>
+      <Team></Team>
+      <Join></Join>
+      <Footer></Footer>
     </div>
   );
 }
