@@ -6,17 +6,19 @@ import About from './About';
 import Team from './Team';
 import Join from './Join';
 import Footer from './Footer';
+import Workshops from './Workshops';
+import Hackathons from './Hackathons';
 
 function App() {
   const tabs = [
-    {
-      title: "WORKSHOPS",
-    },
     {
       title: "ABOUT",
     },
     {
       title: "TEAM",
+    },
+    {
+      title: "WORKSHOPS",
     },
     {
       title: "HACKATHONS",
@@ -28,12 +30,14 @@ function App() {
 
   return (
     <div className="App">
-      <Nav tabs={tabs}></Nav>
-      <Home></Home>
-      <About></About>
-      <Team></Team>
-      <Join></Join>
-      <Footer></Footer>
+      <Nav tabs={tabs} />
+      <Home />
+      <About />
+      <Team />
+      <Workshops />
+      <Hackathons />
+      <Join />
+      <Footer />
     </div>
   );
 }
