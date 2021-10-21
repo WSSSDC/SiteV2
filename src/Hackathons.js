@@ -20,7 +20,7 @@ function Hackathons() {
   return (
     <div className="Section vertical-center">
         <div className>
-            <h1 className='section--subtitle'>Hackathons</h1> 
+            <h1 className='section--subtitle text-start'>Hackathons</h1> 
             <br /> <br />
             <div className='row'>
                 {hackathons.map(hackathon =>

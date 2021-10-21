@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   background-color: rgb(33, 37, 41);
+  font-family: 'Gotham Book';
 }
 
 .Section {
@@ -69,8 +70,8 @@
 
 .section--subtitle {
   color: #9111E9;
-  float: left;
   font-weight: bold;
+  font-family: 'Gotham Medium';
 }
 
 .card {
@@ -78,8 +79,8 @@
 }
 
 .card--team {
-  width: 80px;
-  margin: 5px;
+  margin: 10px;
+  font-family: 'Gotham Medium';
 }
 
 .card--hackathon {
@@ -92,6 +93,16 @@
   background-color: white;
   color: black;
   height: 100%;
-  border-radius: 20px;
-  font-weight: bold;
+  border-radius: 25px;
+  font-family: 'Gotham Bold';
+  font-size: 18px;
+  width: 300px;
+}
+
+.gotham-bold {
+  font-family: 'Gotham Bold';
+}
+
+.gotham-medium {
+  font-family: 'Gotham Medium';
 }
