@@ -27,7 +27,7 @@ function Team() {
             <br /><br />
             <div className='row'>
                 {team.map(member =>
-                    <div className='col'>
+                    <div className='col-md-3 col-sm-6'>
                         <div className='card card--team pb-0'>
                             <img className='mt-2' src='https://image.shutterstock.com/image-vector/business-man-cell-phone-his-260nw-508516348.jpg'></img>
                             <p className='pt-3 pb-0 mb-0'>{member.name}</p>

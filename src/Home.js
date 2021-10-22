@@ -16,17 +16,18 @@ function Home() {
     var hours = timeDifference/3.6e6 | 0;
     var mins  = timeDifference%3.6e6 / 6e4 | 0;
     var secs  = Math.round(timeDifference%6e4 / 1e3);
-    return hours + ':' + mins + ':' + (secs < 10 ? '0' : '') + secs;
+    return hours + ':' + (mins < 10 ? '0' : '') + mins + ':' + (secs < 10 ? '0' : '') + secs;
+    // return timeInDays(hours);
   }
 
   useEffect(() => {
     setTimeUntil((_) => timeUntilNextMeeting());
     const interval = setInterval(() => {
-      console.log('This will run every second!');
       setTimeUntil((_) => timeUntilNextMeeting());
     }, 1000);
     return () => clearInterval(interval);
   }, []);
+  
 
   return (
     <div className="Home">
